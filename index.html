@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadet Stationery - Premium office supplies, luxury pens, and handcrafted journals.">
+    <title>Cadet Stationery | Premium Office Supplies</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Firebase SDK (Compatible for data persistence later) -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">CADET <span>STATIONERY</span></a>
+
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#products">Collection</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Elevate Your Work</h1>
+            <p>Premium office supplies, luxury writing instruments, and handcrafted journals designed for the modern professional.</p>
+            <a href="#products" class="btn-premium">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Category Filters -->
+    <div class="section-container" style="padding-bottom: 0;">
+        <h2 class="section-title">The Masterpiece Collection</h2>
+        <div class="filter-bar">
+            <button class="filter-tab active" onclick="filterCategory('all')">All Collections</button>
+            <button class="filter-tab" onclick="filterCategory('writing')">Instruments</button>
+            <button class="filter-tab" onclick="filterCategory('paper')">Paper & Journals</button>
+            <button class="filter-tab" onclick="filterCategory('tools')">Desk Tools</button>
+            <button class="filter-tab" onclick="filterCategory('gifts')">Artisan Gifts</button>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="section-container" id="products" style="padding-top: 50px;">
+        <div class="product-grid" id="productGrid">
+            <!-- Dynamic Content Loaded from products.js -->
+        </div>
+
+        <div id="loadMoreContainer" style="text-align: center; margin-top: 80px;">
+            <button class="btn-premium" onclick="loadMore()">Discover More</button>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923000000000" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cadet Stationery Store. Crafted for excellence.</p>
+    </footer>
+
+    <script src="products.js"></script>
+</body>
+
+</html>
