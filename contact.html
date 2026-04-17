@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concierge Support | Cadet Stationery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            margin-top: 50px;
+        }
+        .contact-form-container {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            padding: 50px;
+            backdrop-filter: blur(10px);
+        }
+        .input-group {
+            margin-bottom: 30px;
+        }
+        .input-group label {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.7rem;
+            color: var(--accent-gold);
+            margin-bottom: 10px;
+        }
+        .input-group input, .input-group textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid var(--glass-border);
+            color: var(--text-white);
+            padding: 10px 0;
+            font-size: 1rem;
+            outline: none;
+            transition: var(--transition-fast);
+        }
+        .input-group input:focus, .input-group textarea:focus {
+            border-bottom-color: var(--accent-gold);
+        }
+        .info-card {
+            margin-bottom: 40px;
+        }
+        .info-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--accent-gold);
+        }
+        .info-card p {
+            font-weight: 300;
+            color: var(--text-cream);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">CADET <span>STATIONERY</span></a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="section-container" style="margin-top: 100px;">
+        <h1 style="font-size: 4rem; text-align: center; margin-bottom: 80px;">Personal Concierge</h1>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-card">
+                    <h3>Bespoke Inquiries</h3>
+                    <p>Have a specific request for a high-end commission or corporate gifting? Our specialists are at your service.</p>
+                </div>
+                <div class="info-card">
+                    <h3>The Atelier</h3>
+                    <p>Building 42, Elite Avenue<br>London, UK</p>
+                </div>
+                <div class="info-card">
+                    <h3>Digital Correspondence</h3>
+                    <p>concierge@cadetstationery.com<br>+44 20 7946 0958</p>
+                </div>
+                <button class="buy-btn" style="margin-top: 20px;" onclick="window.open('https://wa.me/923000000000', '_blank')">
+                    <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Chat
+                </button>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contactForm">
+                    <div class="input-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Johnathan Doe" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Electronic Mail</label>
+                        <input type="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Your Message</label>
+                        <textarea rows="5" placeholder="How can we assist you today?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-premium" style="width: 100%;">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Cadet Stationery Store. Crafted for excellence.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Your inquiry has been received by our concierge. We will contact you shortly.');
+        });
+    </script>
+</body>
+
+</html>
