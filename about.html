@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Heritage | Cadet Stationery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .heritage-section {
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            margin-bottom: 150px;
+        }
+        .heritage-image {
+            flex: 1;
+            height: 600px;
+            background: url('https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?auto=format&fit=crop&q=80&w=800') center/cover;
+            border: 1px solid var(--accent-gold);
+            padding: 20px;
+            position: relative;
+        }
+        .heritage-image::after {
+            content: '';
+            position: absolute;
+            top: -20px; right: -20px;
+            width: 100%; height: 100%;
+            border: 1px solid var(--accent-gold);
+            z-index: -1;
+        }
+        .heritage-content {
+            flex: 1;
+        }
+        .gold-divider {
+            width: 80px;
+            height: 2px;
+            background: var(--accent-gold);
+            margin: 30px 0;
+        }
+        .quote {
+            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: var(--accent-gold);
+            margin: 50px 0;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">CADET <span>STATIONERY</span></a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="section-container" style="margin-top: 100px;">
+        <div class="heritage-section">
+            <div class="heritage-content">
+                <p style="text-transform: uppercase; letter-spacing: 5px; color: var(--accent-gold); margin-bottom: 20px;">EST. 2026</p>
+                <h1 style="font-size: 4rem; line-height: 1;">The Art of <br>Fine Writing</h1>
+                <div class="gold-divider"></div>
+                <p style="font-weight: 300; font-size: 1.1rem; color: var(--text-cream);">
+                    At Cadet Stationery, we believe that the tools you use define the legacy you leave. What began as a passion for the tactile beauty of ink on paper has evolved into a sanctuary for the world's finest writing instruments and handcrafted journals.
+                </p>
+                <p class="quote">"A pen is more than a tool; it is an extension of the soul."</p>
+            </div>
+            <div class="heritage-image"></div>
+        </div>
+
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 style="font-size: 3rem; margin-bottom: 40px;">Our Philosophy</h2>
+            <p style="font-weight: 300; font-size: 1.2rem; color: var(--text-cream); line-height: 2;">
+                We curate our collections with an uncompromising eye for quality. From the weight of the nib to the grain of the leather, every detail is scrutinised. Our mission is to provide the modern professional with an analogue escape in a digital world.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Cadet Stationery Store. Crafted for excellence.</p>
+    </footer>
+</body>
+
+</html>
